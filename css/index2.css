@@ -1,0 +1,212 @@
+.p {
+    margin: 0px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(238, 0, 255);
+    --border-right: 6px;
+    --text-stroke-color: rgb(255, 255, 255);
+    --animation-color: #ff00f7;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.a {
+  float: right;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.b {
+  float: left;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-position: center;
+    background-repeat: repeat-x repeat-y;
+    background-image: url(../images/fondo1.jpg);
+    background-size: cover;
+}
+
+.card {
+    margin-left: 5em;
+    float: left;
+    display: block;
+    border: solid 4px rgb(238, 0, 255);
+    width: 335px;
+    background-image: linear-gradient(163deg, rgb(238, 0, 255) 0%, rgb(238, 0, 255) 100%);
+    height: 506px;
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    display: block;
+
+    width: 335px;
+    height: 506px;
+    background-image: url(../images/card1.jpg);
+    border-radius: 15px;
+    transition: all .2s;
+    box-shadow: 0px 0px 50px 0px rgb(242, 0, 255);
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 18px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 0px rgb(242, 0, 255);
+   }
+
+
+  video {
+    display: block;
+    margin-right: 5em;
+    float: right;
+    width: 900px;
+    border: solid 4px rgb(238, 0, 255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 1px rgb(242, 0, 255);
+    transition: all .3s;
+  }
+
+  .video1 {
+    display: block;
+    border-radius: 15px;
+    transition: all .2s;
+    box-shadow: 0px 0px 50px 0px rgb(242, 0, 255);
+   }
+
+  video:hover {
+    transform: scale(0.98);
+    border-radius: 18px;
+   }
+   
+video:hover {
+    box-shadow: 0px 0px 30px 0px rgb(242, 0, 255);
+   }
+
+  h1 {
+    text-align: center;
+    --border-right: 20px;
+    --text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 100px;
+    --animation-color: #ff00f7;
+    --fs-size: 80px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+
+  .hover-h1 {
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+
+    overflow: hidden;
+    transition: 0s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+
+  .h1:hover .hover-h1 {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+a:link {
+    color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+a:visited {
+    color:#00fffb;
+    text-shadow: #1100ff 1px 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: #4000ff 1px 0 15px; 
+}
+  
+a:active {
+    color:rgb(43, 44, 46);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: #ff00bf 1px 0 15px; 
+}
+
+a:hover {
+    color:rgb(255, 255, 255);
+    -webkit-text-stroke: 0.25px #ff0099;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+body::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 0, 230, 0.233);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(255, 0, 238);  /* creates padding around scroll thumb */
+}
+
+@media only screen and (max-width: 1080px) {
+  body {
+    background-image: url(../images/fondor.png);
+    max-width: 100%;
+    background-position: top;
+  }
+  
+h1 {
+  margin-top: 150px;
+  font-size: 120px;
+}
+
+  video {
+    height: 0px;
+    border: 0px;
+  }
+
+.b {
+  margin-top: 30px;
+  font-size: 40px;
+  margin-left: 15px;
+}
+
+.a {
+  margin-top: 30px;
+  margin-right: 15px;
+  font-size: 40px;
+}
+
+  .card {
+    margin-top: 25px;
+    width: 929px;
+    height: 1403px;
+  }
+
+  .card2 {
+    width: 929px;
+    height: 1403px;
+    background-image: url(../images/cardr.jpg);
+  }
+}

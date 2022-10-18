@@ -1,0 +1,28 @@
+body {
+    margin-top: 45em;
+    background-position: center;
+    background-repeat: repeat-x repeat-y;
+    background-image: url(../images/fondo.png);
+    background-size: cover;
+}
+body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(255, 0, 230, 0.233);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(255, 0, 238);  /* creates padding around scroll thumb */
+  }
+
+  @media only screen and (max-width: 1080px) {
+    body {
+      background-image: url(../images/fondor.png);
+      max-width: 100%;
+      background-position: top;
+    }
+  }
