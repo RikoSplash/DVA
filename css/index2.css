@@ -169,7 +169,7 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid rgb(255, 0, 238);  /* creates padding around scroll thumb */
 }
 
-@media only screen and (max-width: 1080px) {
+/* @media only screen and (max-width: 1080px) {
   body {
     background-image: url(../images/fondor.png);
     max-width: 100%;
@@ -209,4 +209,4 @@ h1 {
     height: 1403px;
     background-image: url(../images/cardr.jpg);
   }
-}
+} */
